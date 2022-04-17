@@ -31,8 +31,8 @@ drive.mount("/content/gdrive")
 
 dataset =pd.read_csv('/content/gdrive/My Drive/Fertilizer_Prediction.csv')
 newsubset = []
-dataset.drop(['Soil Type'], axis=1, inplace=True)
-dataset.drop(['Crop Type'], axis=1, inplace=True)
+dataset.drop(['Soiltype'], axis=1, inplace=True)
+dataset.drop(['Croptype'], axis=1, inplace=True)
 datalabels = ['Urea', 'DAP', '14-35-14', '28-28', '17-17-17', '20-20', '10-26-26']
 
 for i in datalabels:
